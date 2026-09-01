@@ -5,4 +5,6 @@ To Add:
 * transfer playlist to target and change path references - this could allow for numerous playlists to go to the device.
 * pass a number of sub-playlists - perhaps iterate through a list in a text file. nb skip deletion as smaller sub-playlists will naturally be missing files already on target
 * add ETA
+* add oversize/space warning for target
 * maybe keep file transfer speed against each file in verbose mode
+* downsampling?
