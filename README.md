@@ -16,8 +16,8 @@ Linux example:  _python m3u_transfer_v1.0.0.py "a playlist.m3u" "/run/media/me/H
   (an example based on the transfer between a mounted external HDD and the target SD card, also mounted).
 
 Offset:
-for a one-hour positive offset: _python copy_m3u.py "playlist.m3u" "M:\Music\Music" "D:\sync" --offset 1_
-for one hour backwards: _python copy_m3u.py "playlist.m3u" "M:\Music\Music" "D:\sync" --offset -1_
+for a one-hour positive offset: _python m3u_transfer_v1.0.0.py "a playlist.m3u" "C:\iTunes\Music\" "D:\music\" --offset 1_
+for one hour backwards: _python m3u_transfer_v1.0.0.py "a playlist.m3u" "C:\iTunes\Music\" "D:\music\" --offset -1_
 
 For half hours you can use fractions ie, 30 minutes: --offset 0.5 or 90 minutes: --offset 1.5
 Another point to note: 
