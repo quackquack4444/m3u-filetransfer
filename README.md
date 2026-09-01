@@ -1,7 +1,8 @@
 # m3u-filetransfer
 
 Initially built to transfer an iTunes exported .m3u tracklist to a SD card or other device. 
-It will create, or update, files in the target folder, and display progress.
+It will create, or update, files in the target folder. A display of percentage progress and a count/total. C=changed, U-updated. A rudimentary data transfer rate is displayed.
+
 WARNING: It will delete files no longer in the playlist (you have the option to cancel this).
 A verbose mode, that displays the currently written file can be enabled by adding '--verbose' to the command line.
 A time offset mode (as yet not fully tested) allows for any small fixed discrepancy due to the way that various OSes handle daylight saving times.
