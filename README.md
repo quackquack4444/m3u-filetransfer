@@ -15,6 +15,22 @@ Windows example: _python m3u_transfer_v1.0.0.py "a playlist.m3u" "C:\iTunes\Musi
 Linux example:  _python m3u_transfer_v1.0.0.py "a playlist.m3u" "/run/media/me/HDDBackup/C/iTunes/Music/" "/run/media/me/512GBSD/music"_
   (an example based on the transfer between a mounted external HDD and the target SD card, also mounted).
 
+Offset:
+for a one-hour positive offset: _python copy_m3u.py "playlist.m3u" "M:\Music\Music" "D:\sync" --offset 1_
+for one hour backwards: _python copy_m3u.py "playlist.m3u" "M:\Music\Music" "D:\sync" --offset -1_
+
+For half hours you can use fractions ie, 30 minutes: --offset 0.5 or 90 minutes: --offset 1.5
+Another point to note: 
+If you have:
+Source:       12:00
+Destination:  12:30
+
+if you set --offset 1, the comparison effectively becomes:
+Source:       13:00
+Destination:  12:30
+
+so the file will be updated. But without an offset, the source would be considered older and left alone.
+
 I have to admit that (and it will be obvious to many) that this was written with the assistance of ChatGPT, hence the MIT licence as I cannot really say that I wrote it myself. I can program, and have been doing so for 40 years, but I needed a quick solution when I discovered that the App/program I'd paid for stopped working. 
 Sorry, I've not written documentation for years! and this is my first proper attempt at uploading/publishing to GitHub.
 
