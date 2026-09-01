@@ -7,7 +7,7 @@ WARNING: It will delete files no longer in the playlist (you have the option to 
 A verbose mode, that displays the currently written file can be enabled by adding '--verbose' to the command line.
 A time offset mode (as yet not fully tested) allows for any small fixed discrepancy due to the way that various OSes handle daylight saving times.
 
-Syntax: python m3u_transfer_v1.0.0.py <playlist name> <iTunes path> <destination folder> (--verbose --time_offset <hours>).
+Syntax: _python m3u_transfer_v1.0.0.py <playlist name> <iTunes path> <destination folder> (--verbose --time_offset <hours>)_.
 
 Windows example: _python m3u_transfer_v1.0.0.py "a playlist.m3u" "C:\iTunes\Music\" "D:\music\"_
   (this effectively strips the iTunes folder info from the host device's path for tidiness and replaces it with the target).
