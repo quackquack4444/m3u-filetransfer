@@ -9,7 +9,7 @@ Verbose mode, which displays the currently written file, is enabled by adding '-
 
 A time offset mode (as yet not fully tested) allows for any small fixed discrepancy due to the way that various OSes handle daylight saving times.
 
-Syntax: python m3u_transfer_v1.0.0.py 'playlist name' 'iTunes path' 'destination folder' (--verbose --time_offset 'hours').
+Syntax: _python m3u_transfer_v1.0.0.py 'playlist name' 'iTunes path' 'destination folder' (--verbose --time_offset 'hours')_.
 
 Windows example: _python m3u_transfer_v1.0.0.py "a playlist.m3u" "C:\iTunes\Music\" "D:\music\"_
   (note that passing the iTunes library path effectively strips the iTunes info from the host device path, in the .m3u, and replaces it with the target, for tidiness).
