@@ -17,15 +17,15 @@ Linux example:  _python m3u_transfer_v1.0.0.py "a playlist.m3u" "/run/media/me/H
 
 Offset:
 for a one-hour positive offset: _python m3u_transfer_v1.0.0.py "a playlist.m3u" "C:\iTunes\Music\" "D:\music\" --offset 1_
-for one hour backwards: _python m3u_transfer_v1.0.0.py "a playlist.m3u" "C:\iTunes\Music\" "D:\music\" --offset -1_
+, and for one hour backwards: _python m3u_transfer_v1.0.0.py "a playlist.m3u" "C:\iTunes\Music\" "D:\music\" --offset -1_
 
-For half hours you can use fractions ie, 30 minutes: --offset 0.5 or 90 minutes: --offset 1.5
+For half hours you can use fractions ie, 30 minutes: _--offset 0.5_ or 90 minutes: _--offset 1.5_
 Another point to note: 
 If you have:
 Source:       12:00
 Destination:  12:30
 
-if you set --offset 1, the comparison effectively becomes:
+if you set _--offset 1_, the comparison effectively becomes:
 Source:       13:00
 Destination:  12:30
 
