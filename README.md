@@ -1,10 +1,11 @@
 # m3u-filetransfer
 
 Initially built to transfer an iTunes exported .m3u tracklist to a SD card or other device. 
-It will create, or update, files in the target folder. A display of percentage progress and a count/total. C=created, U-updated. A rudimentary data transfer rate is displayed. ![Preview in verbose mode](preview.JPG). 
+It will create, or update, files in the target folder. A display of percentage progress and a count/total. C=created, U-updated. A rudimentary data transfer rate is displayed. An optional verbose mode can be implemented: ![Preview in verbose mode](preview.JPG)
 
 WARNING: It will delete files no longer in the playlist (you have the option to cancel this).
-A verbose mode, that displays the currently written file can be enabled by adding '--verbose' to the command line.
+Verbose mode, which displays the currently written file, is enabled by adding '--verbose' to the command line.
+
 A time offset mode (as yet not fully tested) allows for any small fixed discrepancy due to the way that various OSes handle daylight saving times.
 
 Syntax: _python m3u_transfer_v1.0.0.py <playlist name> <iTunes path> <destination folder> (--verbose --time_offset <hours>)_.
