@@ -10,10 +10,10 @@ A time offset mode (as yet not fully tested) allows for any small fixed discrepa
 Syntax: _python m3u_transfer_v1.0.0.py <playlist name> <iTunes path> <destination folder> (--verbose --time_offset <hours>)_.
 
 Windows example: _python m3u_transfer_v1.0.0.py "a playlist.m3u" "C:\iTunes\Music\" "D:\music\"_
-  (this effectively strips the iTunes folder info from the host device's path for tidiness and replaces it with the target).
+  (note that passing the iTunes library path effectively strips the iTunes info from the host device path, in the .m3u, and replaces it with the target, for tidiness).
   
 Linux example:  _python m3u_transfer_v1.0.0.py "a playlist.m3u" "/run/media/me/HDDBackup/C/iTunes/Music/" "/run/media/me/512GBSD/music"_
-  (an example based on the transfer between a mounted external HDD and the target SD card, also mounted).
+  (as per Windows, but an example based on the transfer between a mounted external HDD and the target SD card, also mounted, on a  Linux machine).
 
 Offset:
 for a one-hour positive offset: _python m3u_transfer_v1.0.0.py "a playlist.m3u" "C:\iTunes\Music\" "D:\music\" --offset 1_
