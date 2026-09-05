@@ -37,3 +37,5 @@ I have to admit that (and it will be obvious to many) that this was written with
 Sorry, I've not written documentation for years! and this is my first proper attempt at uploading/publishing to GitHub.
 
 Use at your own risk.
+
+nb V2, re-written by Claude, was charging off and dumping stuff into the buffer (even with the default workers=1) so I'm going to slow it down for v2.1.0
